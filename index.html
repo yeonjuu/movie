@@ -5,66 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
-    <style>
-        div{
-            border : 0.5px solid #666;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        ul{
-            list-style-type: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/moviechart.css">
 </head>
 <body>
-    <div id="header">
-        <div class="header">
+    <div id="header" class="header">
+        <div class="content">
             <div class="logo">
-                <a href="index.html"><h3>영화예매사이트</h3></a></div>
-            <div class="uesrInfo">
-                <ul>
-                    <li>
-                        <a href=""><span>로그인</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>회원가입</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>마이페이지</span></a>
-                    </li>
-                    <li>
-                        <a href=""><span>고객센터</span></a>
-                    </li>
-                    
-                </ul>
-            </div>  
+                <a href="index.html"><h3>영화예매사이트</h3></a>
+            </div>
+            <ul class="userInfo">
+                <li>
+                    <a href=""><span>로그인</span></a>
+                </li>
+                <li>
+                    <a href=""><span>회원가입</span></a>
+                </li>
+                <li>
+                    <a href=""><span>마이페이지</span></a>
+                </li>
+                <li>
+                    <a href=""><span>고객센터</span></a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div id="nav_bar" class="nav">
-        <ul>
-            <li>영화</li>
-            <li>극장</li>
-            <li>예매</li>
-            <li>스토어</li>
-            <li>이벤트</li>
+     </div>  
+
+    <div id="nav_bar" class="nav_wrap">
+        <ul class="nav_menu">
+            <li><a herf ="">영화</a></li>
+            <li><a herf ="">극장</a></li>
+            <li><a herf ="">예매</a></li>
+            <li><a herf ="">스토어</a></li>
+            <li><a herf ="">이벤트</a></li>
         </ul>
-        <div class="search">
-            <input type="text" class = "search_word" value="검색어 입력">
-            <input type="button" value="go" class="btn_search">
+        <div class="search_wrap">
+            <input type="text" class = "search_word">
+            <button class = "btn_search">검색</button>
         </div>
     </div>
     <div class="movieSection">
         <div class="main_video">
-            <div>
-                <img src="images/main.jpg" alt ="main_video">
-                <strong class="main_title">상영예정작 예고편</strong>
-                <span class="main_text">
-                    상영예정작 홍보문구 ~ <br>
-                </span>
-            </div> 
-            <div>
+            <img src="images/main.jpg" alt ="main_video" class="main_video">
+            <div class="movieSection_info">
+            <strong class="main_title">상영예정작 예고편</strong>
+            <span class="main_text">
+                상영예정작 홍보문구 ~ <br>
+            </span>
+            </div>
+            <div class="movieSection_opt">
                 <a href="">상세보기</a>
                 <a href="">stop</a>
                 <a href="">sound_on_off</a>
@@ -146,31 +135,7 @@
                 <div class="swiper_wrapper">
                     <div class="swipe_movie_list">
                         <div class = "movie_img_wrap">
-                            <img src="images/m1.png" alt="movie poster" width=20%>
-                            <div class="movieAgeLimit">
-                                <img src="" alt="Age Limit">
-                            </div>
-                        </div>
-                        <div class ="movieinfo_wrap">
-                            <strong class="moveTitle">title</strong>
-                            <span>예매율 pp%</span>
-                        </div> 
-                    </div>
-                    <div class="swipe_movie_list">
-                        <div class = "movie_img_wrap">
-                            <img src="images/m2.png" alt="movie poster" width=20%>
-                            <div class="movieAgeLimit">
-                                <img src="" alt="Age Limit">
-                            </div>
-                        </div>
-                        <div class ="movieinfo_wrap">
-                            <strong class="moveTitle">title</strong>
-                            <span>예매율 pp%</span>
-                        </div> 
-                    </div>
-                    <div class="swipe_movie_list">
-                        <div class = "movie_img_wrap">
-                            <img src="images/m3.png" alt="movie poster" width=20%>
+                            <img src="images/m5.png" alt="movie poster" width=20%>
                             <div class="movieAgeLimit">
                                 <img src="" alt="Age Limit">
                             </div>
@@ -194,7 +159,31 @@
                     </div>
                     <div class="swipe_movie_list">
                         <div class = "movie_img_wrap">
-                            <img src="images/m5.png" alt="movie poster" width=20%>
+                            <img src="images/m3.png" alt="movie poster" width=20%>
+                            <div class="movieAgeLimit">
+                                <img src="" alt="Age Limit">
+                            </div>
+                        </div>
+                        <div class ="movieinfo_wrap">
+                            <strong class="moveTitle">title</strong>
+                            <span>예매율 pp%</span>
+                        </div> 
+                    </div>
+                    <div class="swipe_movie_list">
+                        <div class = "movie_img_wrap">
+                            <img src="images/m2.png" alt="movie poster" width=20%>
+                            <div class="movieAgeLimit">
+                                <img src="" alt="Age Limit">
+                            </div>
+                        </div>
+                        <div class ="movieinfo_wrap">
+                            <strong class="moveTitle">title</strong>
+                            <span>예매율 pp%</span>
+                        </div> 
+                    </div>
+                    <div class="swipe_movie_list">
+                        <div class = "movie_img_wrap">
+                            <img src="images/m1.png" alt="movie poster" width=20%>
                             <div class="movieAgeLimit">
                                 <img src="" alt="Age Limit">
                             </div>

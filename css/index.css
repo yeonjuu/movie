@@ -1,0 +1,50 @@
+*{
+    margin : 0;
+    border : none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.header .content , .nav_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+    background-color: #fff;
+    align-items: baseline;
+}
+.header{
+    border-bottom: 0.1px solid #666;
+}
+.userInfo{
+    align-items: center;
+    display : flex;
+}
+.userInfo li, .nav_menu li{
+    margin-left :1em;
+}
+.nav_wrap{
+    padding : 10px 0;
+
+}
+.nav_menu{
+    display:flex;
+    align-items : center;
+    padding-left: 0;
+}
+.search_wrap{
+    border-left: 0.1px solid #666;
+    padding-left: 10px;
+}
+/* input btn --> image insert */
+.btn_search{
+    background :  url( "../images/search_icon.png" ) no-repeat;
+    padding : 0 10px;
+}
+.main_video{
+    width : 100%;
+}
+/* movieSection -> div 겹치게, movieSection_info movieSection_opt */
