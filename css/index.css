@@ -1,50 +1,11 @@
-*{
-    margin : 0;
-    border : none;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-ul{
-    list-style-type: none;
-}
-.header .content , .nav_wrap{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 6px 25px 5px;
-    background-color: #fff;
-    align-items: baseline;
-}
-.header{
-    border-bottom: 0.1px solid #666;
-}
-.userInfo{
-    align-items: center;
-    display : flex;
-}
-.userInfo li, .nav_menu li{
-    margin-left :1em;
-}
-.nav_wrap{
-    padding : 10px 0;
-
-}
-.nav_menu{
-    display:flex;
-    align-items : center;
-    padding-left: 0;
-}
-.search_wrap{
-    border-left: 0.1px solid #666;
-    padding-left: 10px;
-}
-/* input btn --> image insert */
-.btn_search{
-    background :  url( "../images/search_icon.png" ) no-repeat;
-    padding : 0 10px;
-}
-.main_video{
-    width : 100%;
-}
-/* movieSection -> div 겹치게, movieSection_info movieSection_opt */
+#header{ width: 980px; margin : 0 auto;}
+#header .content{display: flex; justify-content: space-between; padding :30px 6px 25px 5px;}
+#header .content h1 {display:flex; height:53px; align-items: flex-end;}
+#header .content h1 a {display:block; width: 115px; height: 100%;
+    background:url(../images/logoRed.png) no-repeat; background-size: contain; color :transparent;}
+#header .content h1 span {font-size:16px; font-weight: normal; letter-spacing: 0.313em; color:#222;}
+#header .content .memberInfo{display: flex;}
+/* 이미지 슬라이스로 설정하는게 메모리 및 유지보수 용이, 하지만 개별이미지 다운으로 설정함  */
+#header .content .memberInfo li a{display:block; text-align: center; margin-left: 34px; margin-top :2px;}
+#header .content .memberInfo li a img {width: 36px; height: 36px;}
+#header .content .memberInfo li a span{display: block; font-size:13px; color : #666;}
