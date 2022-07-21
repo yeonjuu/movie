@@ -41,5 +41,74 @@
             </ul>
         </div>
     </div>
+    <div class="nav_wrap">
+        <div id="nav">
+            <ul>
+                <li><a href="#a">영화</a></li>
+                <li><a href="#a">극장</a></li>
+                <li class="on"><a href="#a">예매</a></li>
+                <li><a href="#a">스토어</a></li>
+                <li><a href="#a">이벤트</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" title="검색" placeholder="최신영화~홍보~">
+                <button type="button">검색</button>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="video_wrap">
+            <strong class="videoTitle">뒤틀린 집</strong>
+            <span class="videoTxt">새로운 한국 호려 영화! <br>미스테리 하우스 호러</span>
+            <div class="controller">
+                <a href="#a" class="videoDetail">상세보기</a>
+                <a href="#a" class="videoPlayOn">play</a>
+                <a href="#a" class="videoSoundOn">sound</a>
+            </div>
+            <!-- <video class="content" autoplay playsinline muted>
+                <source src="media file path~" type="video/mp4">
+                이 브러우저는 Video를 지원하지 않습니다.
+            </video> -->
+            <!-- 비디오 영상은 유투브 예고편으로 대체 -->
+            <iframe src="https://www.youtube.com/embed/nF4In8PARMo" title="YouTube video player" class="content" frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="movieChart">
+        <div class="content">
+            <div class="movieChart_btn_wrap">
+                <div class="tabBtn">
+                    <h3><a href="#a" class="active">무비차트</a></h3>
+                    <h3><a href="#a">상영예정작</a></h3>
+                </div>
+                <a href="#a" class="viewAll">전체보기</a>
+            </div>
+            <div class="controller">
+                <div class="next">Next</div>
+                <div class="prev">Prev</div>
+            </div>
+            <div class="movieChart_list">
+                <div class="moviePoster">
+                    <div class="img_wrap">
+                        <img src="images/poster/85997_320.jpeg" alt="외계인">
+                        <div class="movieAgeLimit">
+                            <img src="images/grade-12.png" alt="AgeLimit">
+                            <!-- 영화개봉 d-day -->
+                            <span>2</span>
+                        </div>
+                        <div class="screenType_wrap">
+                            <i class="screenType"><img src="" alt="imax"></i>
+                            <i class="screenType"><img src="" alt="4dx"></i>
+                        </div>
+                    </div>
+                    <div class="movieInfo">
+                        <strong class="movieName">외계+인</strong>
+                        <span><img src="" alt="goldEgg">99%</span>
+                        <span>예매율 30.4%</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
 </body>
 </html>

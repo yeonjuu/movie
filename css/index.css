@@ -9,3 +9,53 @@
 #header .content .memberInfo li a{display:block; text-align: center; margin-left: 34px; margin-top :2px;}
 #header .content .memberInfo li a img {width: 36px; height: 36px;}
 #header .content .memberInfo li a span{display: block; font-size:13px; color : #666;}
+
+.nav_wrap{border-bottom: 3px solid rgb(255, 60, 0); border-top: .5px solid rgba(197, 197, 197, 0.6);}
+#nav {width:980px; height:50px; margin : 0 auto; line-height: 50px;}
+#nav ul {float:left; }
+#nav ul li {display: inline-block;font-size:16px; padding : 0 50px 0 0;}
+#nav ul li a{display:block;}
+#nav ul .on a{color:#ff0000; font-weight: bold;}
+#nav div {float :right; width:232px; position:relative;}
+#nav div::before , #nav div::after {content : ""; position:absolute; top:50%; transform: translateY(-50%);width:1px; height:18px;background:rgba(197, 197, 197, 0.6); }
+#nav div::before {left:0;}
+#nav div::after {right:0;}
+#nav .search input{width: 187px; height: 24px; margin: 0 0 0 7px; border:none; text-indent: 10px; font-size:16px;}
+#nav .search input::-webkit-input-placeholder{font-size:16px;}
+#nav .search button{ width:26px; height:26px; border : none; 
+    background:transparent url(../images/search_icon.png) no-repeat; background-size: cover; color:transparent; cursor: pointer;}
+    
+#container {height: 498px; background:#000; z-index: -1;}
+#container .video_wrap{width: 980px; height: 100%; margin:0 auto; position: relative;}
+#container .video_wrap strong{display:block; color :#fff; font-size:40px; position:absolute; top: 180px; left:3px;}
+#container .video_wrap span {color :#fff; font-size:20px; position:absolute; top:244px; left:3px; line-height: 30px;}
+#container .video_wrap .controller{width:180px; height:30px;position: absolute; top:318px; left:3px; display: flex;}
+#container .video_wrap .controller a{display:block; color:transparent;}
+#container .video_wrap .controller .videoDetail{padding:5px 30px 5px 18px; color:#343434; font-size:14px; border-radius: 15px; line-height: 1.45em; 
+    background:rgba(255,255,255,0.8) url(../images/arrowR_8x13.png) calc(100% - 11px) center/8px 13px  no-repeat; }
+#container .video_wrap .controller .videoPlayOn,
+#container .video_wrap .controller .videoSoundOn{background: url(../images/play.png) center/18px no-repeat; border-radius: 50%; 
+    border: 1px solid #979797; margin-left: 10px; width: 28px; height: 28px;}
+#container .video_wrap .controller .videoSoundOn{background-image: url(../images/soundOff.png)}
+
+#container .video_wrap .content {width:100%; height: 100%;}
+
+#movieChart{background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));}
+#movieChart .content {padding : 50px 30px 60px; position:relative;}
+#movieChart .movieChart_btn_wrap {display:flex; justify-content: space-between; margin-bottom: 25px; }
+#movieChart .movieChart_btn_wrap .tabBtn{display: flex;}
+#movieChart .movieChart_btn_wrap .tabBtn h3 a{font-weight: normal; color :#666; font-size:26px;}
+#movieChart .movieChart_btn_wrap .tabBtn h3 .active{ font-weight : 700; color:#222; font-size:26px;}
+#movieChart .movieChart_btn_wrap .tabBtn h3 ~ h3 {position: relative; margin-left: 32px;}
+#movieChart .movieChart_btn_wrap .tabBtn h3 ~ h3::before {content:""; position:absolute; top: 50%; left:-16px; width: 1px; height: 14px; transform: translateY(-50%);  background: #d3d3d3;} 
+#movieChart .movieChart_btn_wrap .viewAll {border : 1px solid #e2e2e2; border-radius: 15px; font-size :14px; padding: 4px 32px 4px 15px; line-height: 22px;
+    background: transparent url(../images/arrowR_8x13.png) calc(100% - 7px) center/8px 13px no-repeat; box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%) ;}
+
+#movieChart .controller div{width: 40px; height: 40px; border-radius: 50%; color:transparent; box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);}
+#movieChart .controller div.next{position:absolute; top: 50%; left: 0; background: rgb(255,255,255,0.8) url(../images/arrowR_8x13.png) center/9px 14px no-repeat; transform: rotate(-180deg);}
+#movieChart .controller div.prev{position:absolute; top: 50%; right: 0; background: rgb(255,255,255,0.8) url(../images/arrowR_8x13.png) center/9px 14px no-repeat; }
+
+#movieChart .moviePoster .img_wrap {position:relative; width: 164px; height: 232px;}
+.img_wrap > img {width: 100%; height: 100%; object-fit: cover;}
+.content {width: 988px; height: 100%; margin : 0 auto;}
+
